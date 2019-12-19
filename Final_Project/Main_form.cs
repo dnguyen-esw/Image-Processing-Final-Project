@@ -66,7 +66,7 @@ namespace Final_Project
             pictureBox_step4.Image = imgThres.ToBitmap();
             
             Emgu.CV.Util.VectorOfVectorOfPoint contours = new Emgu.CV.Util.VectorOfVectorOfPoint();//tạo 1 contours là 1 vector chứa vector tập hợp các điểm để vẽ contours
-            Mat hier = new Mat();
+            Mat hier = new Mat();//chứa thông tin về hình ảnh như số đường viền, xếp hạng các đường viền theo kích thước, trong ngoài
 
             Image<Bgr, byte> img_contour = new Image<Bgr, byte>(img.Bitmap);//khai báo ảnh màu để vẽ contours vào - chính là ảnh gốc
             CvInvoke.FindContours(imgThres, contours, hier, RetrType.External, ChainApproxMethod.ChainApproxSimple);//tìm contours, đầu vào là ảnh binary đã phân đoạn, đầu ra là contours tìm đc
