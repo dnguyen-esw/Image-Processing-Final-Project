@@ -1,4 +1,5 @@
-Author: Duc Nguyen, Email: hoangduc104@gmail.com
+Author: Duc Nguyen 
+Email: hoangduc104@gmail.com
 
 Main code: Final_Project/Main_form.cs
 Library & framework: 
